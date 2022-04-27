@@ -4,39 +4,39 @@ export default function Login() {
     return (
         <>
             <div className="contents">
-                <h2 class="ir_so">컨텐츠 영역</h2>
-                <section class="join_type gray">
-                    <div class="member-form">
+                <h2 className="ir_so">컨텐츠 영역</h2>
+                <section className="join_type gray">
+                    <div className="member-form">
                         <form action="#" name="join" method="post">
                             <fieldset>
-                                <legend class="ir_so">로그인 입력 폼</legend>
-                                <div class="join-box">
+                                <legend className="ir_so">로그인 입력 폼</legend>
+                                <div className="join-box">
                                     <div>
-                                        <label for="youEmail">이메일</label>
+                                        <label htmlFor="youEmail">이메일</label>
                                         <input
                                             type="email"
                                             id="youEmail"
                                             name="youEmail"
-                                            placeholder="Sample@naver.com"
-                                            autocomplete="off"
-                                            autofocus
+                                            placeholde="Sample@naver.com"
+                                            autoComplete="off"
+                                            autoFocus
                                             required
                                         ></input>
                                     </div>
                                     <div>
-                                        <label for="youPass">비밀번호</label>
+                                        <label htmlFor="youPass">비밀번호</label>
                                         <input
                                             type="password"
                                             id="youPass"
                                             name="youPass"
-                                            maxlength="20"
+                                            maxLength="20"
                                             placeholder="비밀번호를 적어주세요!"
-                                            autocomplete="off"
+                                            autoComplete="off"
                                             required
                                         ></input>
                                     </div>
                                 </div>
-                                <button id="joinBtn" class="join-submit" type="submit">
+                                <button id="joinBtn" className="join-submit" type="submit">
                                     로그인 하기
                                 </button>
                             </fieldset>
