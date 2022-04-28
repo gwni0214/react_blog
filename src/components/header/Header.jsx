@@ -1,40 +1,45 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <a href="../../index.html">
+                <Link to="/">
                     React <em>Blog</em>
-                </a>
+                </Link>
             </h1>
             <nav className="menu">
                 <h2 className="ir_so">메인 메뉴</h2>
                 <ul>
                     <li>
-                        <a href="#!">HOME</a>
+                        <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <a href="#!">LOGIN</a>
+                        <Link to="/login">LOGIN</Link>
                     </li>
                     <li>
-                        <a href="#!">CONTACT</a>
+                        <Link to="/">CONTACT</Link>
                     </li>
                     <li>
-                        <a href="#!">WRITE</a>
+                        <Link to="/write">WRITE</Link>
                     </li>
                     <li>
-                        <a href="#!">LOGOUT</a>
+                        <Link to="/">LOGOUT</Link>
                     </li>
                 </ul>
             </nav>
             <div className="member">
-                <img
-                    src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                    alt="1"
-                />
-                <span>Gwni님 반갑습니다.</span>
+                <Link to="/mypage">
+                    <img
+                        src="https://images.pexels.com/photos/1858175/pexels-photo-1858175.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                        alt="1"
+                    />
+                </Link>
+                <Link to="/mypage">
+                    <span>Gwni님 반갑습니다.</span>
+                </Link>
             </div>
         </header>
     );

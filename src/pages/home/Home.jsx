@@ -1,25 +1,18 @@
 import React from "react";
-import Footer from "../../components/footer/Footer";
-import Header from "../../components/header/Header";
-import Post from "../../components/post/Post";
+
+import Posts from "../../components/posts/Posts";
 import Side from "../../components/side/Side";
-import Login from "../login/Login";
+
 
 export default function Home() {
     return (
-        <>
-            <Header />
+        <>           
             {/* <Login /> */}
-            <main id="main">
-                <Post />
-                <Post />
-                <Post />
-                <Post />
-                <Post />
-              
+            <main id="main">                
+                <Posts />              
                 <Side />
             </main>
-            <Footer />
+           
         </>
     );
 }
