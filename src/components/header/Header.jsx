@@ -20,7 +20,7 @@ export default function Header() {
                         <Link to="/login">LOGIN</Link>
                     </li>
                     <li>
-                        <Link to="/">CONTACT</Link>
+                        <Link to="/join">JOIN</Link>
                     </li>
                     <li>
                         <Link to="/write">WRITE</Link>
